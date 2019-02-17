@@ -1,0 +1,366 @@
+body {
+    cursor: url(http://47.92.69.253/img/cursor.ico), auto;
+    background: url(../img/all-bg.png) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position-x: 0%;
+    /* 62% y 70% u 78% m 88% i 93% e */
+    /* 5% y  12% u 22% m 28% i 34% e  */
+    height: 100%;
+    width: 1335px;
+    background-position-y: 125px;
+}
+
+.navbar-collapse.collapse {
+    display: block !important;
+    height: auto !important;
+    padding-bottom: 0;
+    overflow: visible !important;
+    background-color: white;
+    width: auto;
+    border-top: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (min-width: 768px)
+    .navbar-collapse.collapse {
+    }
+
+    @media (min-width: 768px)
+        .navbar-collapse {
+        }
+
+        #hello {
+            padding-left: 32%;
+            padding-top: 15%;
+        }
+
+        .hello {
+            text-shadow: 1px 1px 0 orangered, -1px -1px 0 #00a7e0;
+            color: pink;
+            font-family: 'TianZhen16d958dc521ef77';
+            font-size: 8vw;
+        }
+
+        #liule {
+            width: 120px;
+            height: 120px;
+            padding-left: 45%;
+        }
+
+        @font-face {
+            font-family: nicefont;
+            /*这里是说明调用来的字体名字*/
+            src: url(../font/sogood.woff2);
+            /*这里是字体文件路径*/
+        }
+
+        .image {
+            vertical-align: top;
+            width: 200px;
+            height: 280px;
+        }
+
+        .divul {
+            margin-left: 50px;
+            width: 1200px;
+            margin-bottom: -20px;
+            clear: both;
+        }
+
+        .li-image {
+            width: 200px;
+            height: 330px;
+            display: inline;
+            float: left;
+            margin: 10px 15px 5px 15px;
+        }
+
+        .fl {
+            font-size: small;
+            color: deeppink;
+            font-family: "微软雅黑";
+        }
+
+        .fr {
+            font-size: small;
+            float: right;
+            color: gray;
+            font-family: "微软雅黑";
+        }
+
+        .ah {
+            font-size: small;
+            width: 200px;
+            display: block;
+            overflow: hidden;
+            word-break: keep-all;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+
+
+        #xia-div {
+            clear: both;
+            font-size: 12px;
+            padding-top: 60px;
+            bottom: 0;
+            width: 100%;
+            color: cornflowerblue;
+        }
+
+        #love-link ul li,
+        #bs-example-navbar-collapse-1 ul li,
+        .jujili {
+            display: inline;
+            margin-left: 15px;
+        }
+
+        a:link, #xia-div {
+            color: lightseagreen;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: hotpink;
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: lightseagreen;
+            text-decoration: none;
+        }
+
+        .info_li {
+            margin-top: 5px;
+        }
+
+        .em_tit {
+            font-style: normal;
+            color: teal;
+        }
+
+        .p_intro {
+            overflow: hidden;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+        }
+
+        #jujiUl a {
+            color: black;
+        }
+
+        #jujiUl a:hover {
+            color: white;
+        }
+
+
+        .jujili {
+            display: block;
+            float: left;
+            line-height: 39px;
+            height: 39px;
+            margin-right: 35px;
+            white-space: nowrap;
+            position: relative;
+            margin-bottom: 20px;
+            text-align: center;
+            border: 1px solid lightgray;
+            min-width: 100px;
+            font-family: 微软雅黑;
+        }
+
+        /*#register,
+        #login {
+            height: 420px;
+            width: 100%;
+            padding: 20px 10px 50px;
+            vertical-align: middel;
+        }*/
+        /*#register input,
+        #login input {
+            margin-left: 450px;
+            border: 1px solid skyblue;
+            background-color: #fff;
+            margin-left: 475px;
+            font: inherit;
+            box-shadow: none;
+            padding: 10px 0;
+            background: #fbfbfb;
+            width: 340px;
+            margin-top: 20px;
+        }*/
+        .aboutUser {
+            width: 980px;
+            margin: 0 auto;
+            padding: 60px 0;
+            display: block;
+        }
+
+        .form-group {
+            width: 100%;
+            margin: 0 auto;
+            font-size: 12px;
+            position: relative;
+            padding: 0;
+            display: block;
+            margin-left: 280px;
+        }
+
+        .form-group input {
+            background-color: #fff;
+            background-image: none;
+            border-radius: 4px;
+            border: 1px solid #dcdfe6;
+            box-sizing: border-box;
+            color: #606266;
+            display: inline-block;
+            font-size: inherit;
+            height: 40px;
+            line-height: 40px;
+            outline: 0;
+            padding: 0 15px;
+            width: 420px;
+            margin-top: 15px;
+        }
+
+        #registerForm label.error, #loginForm label.error, .tips {
+            color: deeppink;
+            font-size: 12px;
+            margin-left: 10px;
+            display: inline;
+            font-weight: inherit;
+        }
+
+        .title-line {
+            width: 980px;
+            height: 28px;
+            margin: 30px auto;
+            text-align: center;
+        }
+
+        .shaixuanAnime {
+            float: left;
+            margin-left: 15px;
+            padding: 5px 10px 5px 10px;
+            border-radius: 25%;
+            font-size: 12px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        .shaixuanAnime a {
+            color: black;
+        }
+
+        .mod_select ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .mod_select ul li {
+            list-style-type: none;
+            float: left;
+            margin-left: 20px;
+            height: 10px;
+        }
+
+        .select_box {
+            float: left;
+            margin-left: 15px;
+            position: relative;
+            cursor: pointer;
+            width: 160px;
+            font-size: 12px;
+            height: 25px;
+            /*border-width: 1px;
+            border-style: solid;*/
+            /*border-image: initial;
+            border-radius: 2px;*/
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+        }
+
+        @font-face {
+            font-family: "iconfont";
+            src: url('//at.alicdn.com/t/font_409812_1sjf1tawr6wghkt9.eot?t=1512985394208');
+            /* IE9*/
+            src: url('//at.alicdn.com/t/font_409812_1sjf1tawr6wghkt9.eot?t=1512985394208#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'), url('//at.alicdn.com/t/font_409812_1sjf1tawr6wghkt9.ttf?t=1512985394208') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('//at.alicdn.com/t/font_409812_1sjf1tawr6wghkt9.svg?t=1512985394208#iconfont') format('svg');
+            /* iOS 4.1- */
+        }
+
+        .selet_open {
+            position: absolute;
+            color: deepskyblue;
+            float: right;
+            font-family: "iconfont" !important;
+            font-size: 16px;
+            font-style: normal;
+            /*transform: rotateX(180deg);*/
+            transform: rotateX(0deg);
+        }
+
+        .selet_open:before {
+            content: "\e60c";
+        }
+
+        .select_txt {
+            display: inline-block;
+            padding-left: 10px;
+            width: 135px;
+            line-height: 24px;
+            height: 24px;
+            cursor: text;
+            overflow: hidden;
+            color: deepskyblue;
+        }
+
+        .option {
+            width: 160px;
+            border-top: 0;
+            position: absolute;
+            top: 24px;
+            left: -1px;
+            z-index: 2;
+            overflow: hidden;
+            display: none;
+        }
+
+        .option a {
+            display: block;
+            height: 26px;
+            line-height: 26px;
+            text-align: left;
+            padding: 0 10px;
+            width: 100%;
+            background: white;
+            color: deepskyblue;
+        }
+
+        .option a:hover {
+            background: deepskyblue;
+            color: white;
+        }
+
+        .pagination li a {
+            color: deepskyblue;
+        }
+
+        .pagination li a:visited {
+            text-decoration: none;
+            background-color: white;
+            color: deepskyblue;
+        }
+
+        .jieguo {
+            float: left;
+            margin-top: 20px;
+            height: auto;
+            width: 700px;
+            margin-left: 30px;
+            text-align: initial;
+        }

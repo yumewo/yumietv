@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/yumie.css"/>
+    <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+    <link href='http://cdn.webfont.youziku.com/webfonts/nomal/126839/144/5c3651cff629d9083c60fe65.css' rel='stylesheet'
+          type='text/css'/>
+    <script type="text/javascript" th:src="@{/js/yumietv.js}"></script>
+    <script type="text/javascript" th:src="@{/js/biu.js}"></script>
+</head>
+<body style="background-image: url(img/hello.jpg); background-size: 100%; background-position: center;">
+<div id="hello">
+    <span class="hello">你好,陌生人</span>
+</div>
+<div id="liule">
+    <img id="img" src="img/go.png" th:src="@{/img/go.png}" onclick="toIndex('/index')"
+         style="width: 100%; height: 100%; opacity:0.6;"/>
+</div>
+</body>
+</html>

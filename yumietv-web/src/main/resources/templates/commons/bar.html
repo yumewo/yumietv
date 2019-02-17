@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--top-->
+<div style="width: 100%; height: 148px; background-image: url(/img/daohanglan-bg.png);" th:fragment="topbar">
+    <nav class="navbar navbar-default" style="opacity: 0.7; height: 80px;">
+        <div style="margin-top: 5px; float: left; margin-left: 100px;">
+            <a href="/index">
+                <img th:src="@{/img/logo.png}" style="height: 70px; width: 150px;"/>
+            </a>
+        </div>
+        <div style="float: left; margin-top: 28px;font-size: 14px; margin-left: 90px; margin-right: -300px;">
+            <a th:href="@{/shaixuan}">全部动画</a>
+        </div>
+        <div class="input-group" style="margin-left: 170px; width: 400px; margin-top: 20px; float: left;">
+            <input type="text" name="searchtj" class="form-control" placeholder="请输入您要搜索的关键字"
+                   aria-describedby="basic-addon2">
+            <span id="searchBtn" class="input-group-addon">搜索</span>
+        </div>
+        <div style="float: left; margin-top: 28px;font-size: 14px; margin-left: 14%;" th:if="${#strings.isEmpty(user)}">
+            <a th:href="@{/register}">注册</a>
+            <a style="margin-left: 10px;" th:href="@{/login}">登录</a>
+        </div>
+        <div style="margin-top: 20px; float: left; margin-left: 170px;" class="collapse navbar-collapse"
+             id="bs-example-navbar-collapse-1" th:if="${!#strings.isEmpty(user)}">
+            <div class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                   aria-expanded="false">
+                    [[${user.username}]] <span class="caret">(..•˘_˘•..)</span>
+                </a>
+                <ul class="dropdown-menu">
+                    <!--<li><img src="img/touxiang.png"/></li>-->
+                    <!--<li><a href="#">个人信息</a></li>-->
+                    <li><a th:href="@{/playHistory}">播放记录</a></li>
+                    <li><a th:href="@{/user/zhuxiao}">注销登录</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<!--end-->
+<div id="xia-div">
+    <!--友情连接开始-->
+    <div id="love-link">
+        <ul style="list-style: none;">
+            <li>
+                <a href="#">站长推荐:</a>
+            </li>
+            <!--<li>-->
+                <!--<a href="https://www.halihali.tv/" target="_blank">哈哩哈哩</a>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <!--友情连接结束-->
+    <p class="text-center">本网站提供的所有影视资源均系收集各大网站，本网站只提供web页面浏览服务，并不提供影片资源存储，也不参与任何视频录制、上传</p>
+    <p class="text-center">
+        若本站收集的节目无意侵犯了贵司版权，请给
+        <a class="yumi" href="yumietv@163.com">yumietv@163.com</a>
+        邮箱地址来信，我们将在第一时间删除相应资源
+    </p>
+    <p class="text-center">因爱好与学习创立,不进行任何盈利</p>
+    <p class="text-center">
+        Copyright © 2018-2019
+        <a class="yumi" href="https://www.yumie.tv">yumie.Me</a>. All Rights Reserved .
+    </p>
+</div>
+
+</body>
+</html>

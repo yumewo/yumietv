@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="cn.yumietv.mapper.SearchAnimeMapper">
+    <select id="getAnimeList" resultType="cn.yumietv.domain.SearchAnime">
+        SELECT
+        id,
+        title,
+        actors,
+        first_word,
+        img_url,
+        create_date,
+        country,
+        director,
+        is_end,
+        update_date,
+        (
+        SELECT
+        COUNT(*)
+        FROM
+        anime_episodes
+        WHERE
+        eid = id
+        ) STATUS,
+        anime_desc
+        FROM
+        anime a,
+        anime_desc b
+        WHERE
+        STATUS = 1
+        AND a.id = b.did
+        AND (
+        SELECT
+        COUNT(*)
+        FROM
+        anime_episodes
+        WHERE
+        eid = id
+        )>0;
+    </select>
+    <resultMap id="category" type="string">
+        <result column="category" property="category" javaType="string"/>
+    </resultMap>
+    <select id="selectDuoCategory" resultMap="category">
+        SELECT DISTINCT
+        category,
+        COUNT(*) AS count
+        FROM
+        anime_category
+        GROUP BY
+        category
+        ORDER BY
+        count DESC
+        LIMIT 0,
+        15;
+    </select>
+    <select id="zimu24" resultType="string">
+        SELECT DISTINCT
+        first_word
+        FROM
+        anime
+        ORDER BY
+        first_word ASC;
+    </select>
+    <select id="getNianFen" resultType="string">
+        SELECT DISTINCT
+        create_date
+        FROM
+        anime
+        ORDER BY
+        create_date DESC
+    </select>
+    <select id="getCountry" resultType="string">
+        SELECT DISTINCT
+        country
+        FROM
+        anime;
+    </select>
+</mapper>
